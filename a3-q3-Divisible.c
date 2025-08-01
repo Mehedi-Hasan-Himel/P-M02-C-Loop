@@ -39,11 +39,11 @@ int main()
     scanf("%d", &N);
     if (N % 3 == 0)
     {
-        printf("YES");
+        printf("YES\n");
     }
     else
     {
-        printf("NO");
+        printf("NO\n");
     }
 
     return 0;
