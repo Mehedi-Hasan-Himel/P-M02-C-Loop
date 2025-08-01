@@ -42,7 +42,7 @@ int main()
     scanf("%lld %lld", &A, &B);
     long long Multiply = A * B;
 
-    printf("%lld", Multiply);
+    printf("%lld\n", Multiply);
 
     return 0;
 }
