@@ -57,18 +57,22 @@ int main()
     int N;
     scanf("%d", &N);
 
+    int boughtPunjabi = 0;
+
     if (N > 1000)
     {
         printf("I will buy Punjabi\n");
         N -= 1000;
-
-        if (N >= 500)
-        {
-            printf("I will buy new shoes\n");
-            printf("Alisa will buy new shoes\n");
-        }
+        boughtPunjabi = 1;
     }
-    else
+
+    if (boughtPunjabi && N >= 500)
+    {
+        printf("I will buy new shoes\n");
+        printf("Alisa will buy new shoes\n");
+    }
+
+    if (!boughtPunjabi)
     {
         printf("Bad luck!\n");
     }
